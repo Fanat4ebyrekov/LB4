@@ -1,0 +1,17 @@
+C:\Users\USER\source\repos\LB4\LB4\bin\Debug\LB4.exe.config
+C:\Users\USER\source\repos\LB4\LB4\bin\Debug\LB4.exe
+C:\Users\USER\source\repos\LB4\LB4\bin\Debug\LB4.pdb
+C:\Users\USER\source\repos\LB4\LB4\obj\Debug\MainWindow.g.cs
+C:\Users\USER\source\repos\LB4\LB4\obj\Debug\SecondWindow.g.cs
+C:\Users\USER\source\repos\LB4\LB4\obj\Debug\App.g.cs
+C:\Users\USER\source\repos\LB4\LB4\obj\Debug\LB4_MarkupCompile.cache
+C:\Users\USER\source\repos\LB4\LB4\obj\Debug\LB4_MarkupCompile.lref
+C:\Users\USER\source\repos\LB4\LB4\obj\Debug\MainWindow.baml
+C:\Users\USER\source\repos\LB4\LB4\obj\Debug\SecondWindow.baml
+C:\Users\USER\source\repos\LB4\LB4\obj\Debug\LB4.g.resources
+C:\Users\USER\source\repos\LB4\LB4\obj\Debug\LB4.Properties.Resources.resources
+C:\Users\USER\source\repos\LB4\LB4\obj\Debug\LB4.csproj.GenerateResource.cache
+C:\Users\USER\source\repos\LB4\LB4\obj\Debug\LB4.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\LB4\LB4\obj\Debug\LB4.exe
+C:\Users\USER\source\repos\LB4\LB4\obj\Debug\LB4.pdb
+C:\Users\USER\source\repos\LB4\LB4\obj\Debug\LB4.csprojAssemblyReference.cache

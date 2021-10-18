@@ -1,0 +1,51 @@
+﻿<Window x:Class="LB4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LB4"
+        mc:Ignorable="d"
+        Title="StartWIndow" Height="450" Width="800">
+    <Window.Resources>
+        <x:Array x:Key="DrawAttributes" Type="{x:Type DrawingAttributes}">
+            <DrawingAttributes Color="Black"/>
+            <DrawingAttributes Color="Green"/>
+            <DrawingAttributes Color="Orange"/>
+        </x:Array>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Menu>
+            <MenuItem 
+                Header="Color brush">
+                <ListBox x:Name="lbColors" ItemsSource="{StaticResource DrawAttributes}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Color}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </MenuItem>
+            <MenuItem
+                Header="Size brush">
+                <Slider Width="100"
+                        ValueChanged="Slider_ValueChanged"
+                     Value="0" Minimum="0" Maximum="100" SelectionStart="0" Height="30" />
+            </MenuItem>
+
+            <MenuItem
+                Header="Operation mode">
+                <CheckBox x:Name="checkBox1"  Checked="checkBox1_Checked" Height="20" Content="Draw" />
+                <CheckBox x:Name="checkBox2" Checked="checkBox2_Checked" Height="20" Content="Edit" />
+                <CheckBox x:Name="checkBox3" Checked="checkBox3_Checked" Height="20" Content="Delete"/>
+            </MenuItem>
+        </Menu>
+
+        <InkCanvas Grid.Row="1" DefaultDrawingAttributes="{Binding ElementName=lbColors, Path=SelectedValue}">
+        </InkCanvas>
+    </Grid>
+</Window>
